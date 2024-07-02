@@ -1,0 +1,221 @@
+.hreading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.moviecard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: #242424;
+    transition: all 0.3s ease;
+
+}
+
+.card-body {
+    padding-top: 1rem;
+    text-align: left;
+    width: inherit;
+    text-align: left;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+    padding-top: 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    overflow: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.content {
+    margin-top: 9vh;
+}
+
+.movie-content {
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0.3rem;
+    gap: 1rem;
+}
+
+.top {
+    width: inherit;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.top img {
+    width: 5vw;
+    min-width: 4.5rem;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 0.7rem;
+    float: left;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 0.5rem;
+
+}
+.switch{
+    align-self: flex-end;
+}
+.button-group {
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #242424;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+    scale: 1.1;
+}
+.watched{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    /* rotate: -45deg; */
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    background: rgba(147, 211, 233, 0.1);
+    box-shadow: 0 8px 10px 0 rgba(96, 184, 222, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.watched h4{
+    rotate: -45deg;
+
+}
+
+.card-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.card-title {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    /* font-size: 1.5rem;
+    font-weight: 500;
+    color: white; */
+}
+
+.overlay {
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+}
+
+.form-wrapper {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 50vw;
+    max-width: 30rem;
+    padding: 0.5rem 2rem 2rem;
+}
+.cross{
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    border-radius: 50%;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.form-submit {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.star-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
