@@ -38,15 +38,12 @@ const ReviewForm: React.FC<ReviewFormProps> = ({
     })
 
     useEffect(() => {
-        if (!rating) {
-            setError(true)
-            return
-        } else {
+        if (rating) {
             setError(false)
         }
+
+
     }, [rating])
-
-
 
     const onSubmit = (formdata: Review) => {
 
